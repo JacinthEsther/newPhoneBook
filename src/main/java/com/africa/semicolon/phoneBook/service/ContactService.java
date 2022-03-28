@@ -7,9 +7,10 @@ import com.africa.semicolon.phoneBook.dtos.response.ContactResponse;
 import java.util.List;
 
 public interface ContactService {
-    ContactResponse saveByFirstNameAndMobileNumber(ContactRequest request);
     ContactResponse saveContact(ContactRequest request);
-    ContactRepository getRepository();
+//    ContactRepository getRepository();
     List<ContactResponse> findContact(String something);
+    String deleteContact(String request);
+    ContactResponse updateContact(ContactRequest request);
 
 }
